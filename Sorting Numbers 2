@@ -1,0 +1,9 @@
+function sortingNumbers(array) {
+  let newArray = [];
+  while(array.length > 0) {
+  newArray.push(array.splice(array.indexOf(Math.min(...array)), 1));
+  newArray.push(array.splice(array.indexOf(Math.max(...array)), 1));
+  }
+  return newArray;
+  
+}
